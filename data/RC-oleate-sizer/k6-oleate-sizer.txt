@@ -1,0 +1,1 @@
+Filename	Condition	Concentration	Source	Flag	BatchM9SO1_06.jpg.dat	oleate	-	-	-	5M9SO2_06.jpg.dat	oleate	-	-	-	5M9glucoseB2_06.jpg.dat	control	-	-	-	5M9glucoseB3_06.jpg.dat	control	-	-	-	5
