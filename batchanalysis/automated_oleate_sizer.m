@@ -1,6 +1,6 @@
 %change 'parent' to the parent folder of the Collins colony size data on
 %your system
-parent='/Users/ashiver/Documents/Papers/RC/oleate_fitness/Rachna_sizer/';
+parent='/Users/ashiver/Documents/MATLAB/fitness_oleate/data/';
 dataset={'RC-oleate-sizer/','RC-oleate-sizer/','RC-oleate-sizer/','RC-oleate-sizer/','RC-oleate-sizer/','RC-phen-sizer/','RC-phen-sizer/','RC-phen-sizer/','RC-phen-sizer/','RC-phen-sizer/','RC-oleate-sizer/','RC-phen-sizer/'};
 data={'size/','size/','size/','size/','size/','size/','size/','size/','size/','size/','size/','size/'};
 condition={'k1-oleate-sizer.txt','k2-oleate-sizer.txt','k3-oleate-sizer.txt','k4-oleate-sizer.txt','k5-oleate-sizer.txt','k1-rc-phen-sizer.txt','k2-rc-phen-sizer.txt','k3-rc-phen-sizer.txt','k4-rc-phen-sizer.txt','k5-rc-phen-sizer.txt','k6-oleate-sizer.txt','k6-rc-phen-sizer.txt'};
