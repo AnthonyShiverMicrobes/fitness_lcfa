@@ -1,16 +1,7 @@
 function [keioS,keioM]=automated_lcfascoresizer_stitch(score,meta)
 %-------------------------------------------------------------------------!
-% automated_lcfascoresizer_stitch.m                                       :
-% --------------------------------!                                       :
-% Usage [keioS,keioM]=automated_lcfascoresizer_stitch(score,meta)         :
-%-------------------------------------------------------------------------!
-% Takes structures with individual plate/batches as fields from the driver:
-% script and stitches the data together into a single structure.          :
-%-------------------------------------------------------------------------!
-% Anthony Shiver (2016)                                                   :
-%-------------------------------------------------------------------------!
-
-%stitch the two batches for each keio plate
+% automated_lcfascoresizer_stitch.m
+%
 [k1s,k1m]=combine_lcfasizer_batch(score.a1,score.b1,meta.a1,meta.b1);
 [k2s,k2m]=combine_lcfasizer_batch(score.a2,score.b2,meta.a2,meta.b2);
 [k3s,k3m]=combine_lcfasizer_batch(score.a3,score.b3,meta.a3,meta.b3);
@@ -18,7 +9,6 @@ function [keioS,keioM]=automated_lcfascoresizer_stitch(score,meta)
 [k5s,k5m]=combine_lcfasizer_batch(score.a5,score.b5,meta.a5,meta.b5);
 [k6s,k6m]=combine_lcfasizer_batch(score.a6,score.b6,meta.a6,meta.b6);
 
-%stitch the six keio plates
 [keioS,keioM]=combine_lcfasizer_plate(k1s,k1m,k2s,k2m);
 [keioS,keioM]=combine_lcfasizer_plate(keioS,keioM,k3s,k3m);
 [keioS,keioM]=combine_lcfasizer_plate(keioS,keioM,k4s,k4m);

@@ -1,8 +1,14 @@
 function scoremat = computeScores_LCFA(raw,err,rawC)
-%this function converts the raw colony size data into unaveraged S scores.
-%It can use one of two methods for computing the expected colony size.
-%
-%written by Sean Collins (2006) as part of the EMAP toolbox
+%-------------------------------------------------------------------------!
+% computeScores_LCFA.m
+% -------------------!
+% Usage: scoremat=computeScores_LCFA(raw,err,rawC)
+%-------------------------------------------------------------------------!
+% Adapted from the EMAP toolbox, used to compute Scores from the  LCFA    :
+% dataset.
+%-------------------------------------------------------------------------!
+% Anthony Shiver (2016)
+%-------------------------------------------------------------------------!
 
 [r c n] = size(raw.size);
 scoremat.rowlabels = raw.rowlabels;

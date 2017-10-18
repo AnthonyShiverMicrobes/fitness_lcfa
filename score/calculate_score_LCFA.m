@@ -1,4 +1,17 @@
 function [scoremat,datameta]=calculate_score_LCFA(datamatF,datamatV,datameta,variance_limit,numDup)
+%-------------------------------------------------------------------------!
+% calculate_score_LCFA.m                                                  :
+% ---------------------!                                                  :
+% Usage:                                                                  :
+% [scoremat,datameta]=calculate_score_LCFA(datamatF,datamatV,datameta, ...:
+% .                                        variance_limit, numDup);       :
+%-------------------------------------------------------------------------!
+% Used to reformat data so that it be scored using scripts from Collins   :
+% for the S-score.                                                        :
+%-------------------------------------------------------------------------!
+% Anthony Shiver (2016)                                                   :
+%-------------------------------------------------------------------------!
+
 fields=fieldnames(datamatF); %assume V and F have same fields
 [controldata,controlmeta,datamatV,datamatF,datameta]=extract_controls(datamatV,datamatF,datameta);
 for m=1:length(fields)

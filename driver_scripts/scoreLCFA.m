@@ -1,8 +1,22 @@
 function [scoremat,datametaC,datamatVC,datameta,datamatV,datamatN,datamatS,...
           datamatF,datamat,settings]...
           =scoreLCFA(cond_file,array_file,data_path,data_format,ignore,bad,plate_type,plate_index)
-%[xxx]=read_in_stats('condition file','array file','data path','format','ignore','bad','type')
-%--ALS 2015.
+%-------------------------------------------------------------------------!
+% scoreLCFA.m                                                             :
+% ----------!                                                             :
+% Usage:                                                                  :                     
+% [...]=scoreLCFA(condition_file,array_file,data_path,data_format, ...    :
+%                 ignore,bad,plate_type,plate_index);                     :
+%-------------------------------------------------------------------------!
+% This function was written to extract colony size data and analyze to    :
+% generate S-scores, copying the analysis pipeline for Shiver et al 2016  :
+% PMID: 27355376. Importantly, this function generates the S-scores using :
+% the function calculate_score_LCFA.m to allow direct comparison between  :
+% colony sizes in an experimental condition and paired control condition. :
+%-------------------------------------------------------------------------!
+% Anthony Shiver (2016)                                                   :
+%-------------------------------------------------------------------------!
+
 %--Save the passed files
 settings.cond_file=cond_file;
 settings.array_file=array_file;
