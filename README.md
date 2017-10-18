@@ -11,6 +11,7 @@ MATLAB 2014a or later recommended
 Requires the MATLAB scripts from fitness_score/ (https://github.com/AnthonyShiverMicrobes/fitness_score)
 
 Running the code
+
 ---------------!
 
 First, load the keio6index. This index specifies how to approach the keio6 plate for normalization. The keio6index is found within <b><i>pathtorepository</i>/metadata/keio6index.mat</b>
@@ -22,6 +23,7 @@ Third, make sure that both repositories <b>fitness_lcfa/</b> and <b>fitness_scor
 Finally, run the script automated_lcfa_assembly.m
 
 Looking at the raw data
+
 ----------------------!
 
 Colony sizes and metadata that were used for analysis are stored in <b>data/</b> and <b>metadata/</b> respectively.
